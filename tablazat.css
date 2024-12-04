@@ -1,4 +1,4 @@
-:root{
+:root {
     --alapszin: rgb(0, 140, 100);
 }
 
@@ -23,15 +23,31 @@ h1 {
 
 .header a {
     text-decoration: none;
-    border: 1px solid gray;
+    color: white;
     padding-inline: 1rem;
 }
 
-.indexcucc {
+.indexcucc{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 1rem;
     padding: 1rem;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
 }
 
 .kepek {
@@ -50,9 +66,7 @@ h1 {
 }
 
 .footer {
-    background-color: var(--alapszin);
-    color: white;
+    color: var(--alapszin);
     text-align: center;
     margin-bottom: 1rem;
-    padding: 1rem;
 }

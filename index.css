@@ -1,49 +1,105 @@
-:root{
+:root {
+    --alapszin: rgb(0, 140, 100);
+}
+
+* {
     text-decoration: none;
-    padding: 0;
     margin: 0;
-}
-
-main{
-    border-width: 1px;
-    border-color: black;
-    border-style: solid;
-}
-
-h1{
-    font-weight: 10rem;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    color: green;
 }
 
-header{
-    background: green;
-    width: 100%;
-    gap: 3rem;
-    padding: 1.5rem;
+h1 {
+    color: var(--alapszin);
+    font-size: 3rem;
+    padding: 0.5rem;
 }
 
-header a{
-    color: antiquewhite;
-    font-family: Arial, Helvetica, sans-serif;
+.header {
+    background-color: var(--alapszin);
+    padding: 1rem;
+}
+
+.header a {
     text-decoration: none;
-    padding-inline: 5rem;
+    color: white;
+    padding-inline: 1rem;
 }
 
-h2{
-    font-family:Arial, Helvetica, sans-serif;
-    color: green;
-    font-weight: 3rem;
-}
-
-.KB{
+.indexcucc {
     display: grid;
-    border-width: 1px;
-    border-color: black;
-    border-style: solid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1rem;
+    padding: 1rem;
 }
 
-img{
-    width: 350px;
-    height: 300px;
+.benz {
+    display: grid;
+    margin: 2rem;
+    margin-top: 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.nev {
+    color: var(--alapszin);
+    padding: 0.5rem;
+    border: 1px solid gray;
+    background-color: rgb(169, 169, 169);
+}
+
+.benz img {
+    height: 400px;
+    width: 300px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    position: relative;
+    left: 7.5rem;
+}
+
+
+.henry {
+    display: grid;
+    margin: 2rem;
+    margin-top: 0;
+    border: 1px solid gray;
+}
+
+.nev2 {
+    color: var(--alapszin);
+    padding: 0.5rem;
+    border: 1px solid gray;
+    background-color: rgb(169, 169, 169);
+}
+
+.henry img {
+    position: relative;
+    left: 7.5rem;
+    height: 400px;
+    width: 300px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+
+.kepek {
+    margin: 2rem;
+    margin-top: 0;
+}
+
+.kepek img {
+    height: 150px;
+    width: 300px;
+    border: 1px solid gray;
+    border-style: double;
+    border-radius: 5px;
+    position: relative;
+    left: 7.5rem;
+}
+
+.footer {
+    color: var(--alapszin);
+    text-align: center;
+    margin-bottom: 1rem;
 }
